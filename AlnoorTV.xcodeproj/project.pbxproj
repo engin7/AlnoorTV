@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037EBE222352410800B7F1DE /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EBE212352410800B7F1DE /* RepoCell.swift */; };
+		03C4246923520E7C00730AAB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */; };
+		03C4246C2352267900730AAB /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246B2352267900730AAB /* UserDetailVC.swift */; };
+		03C4246E23523B7D00730AAB /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246D23523B7D00730AAB /* RepoModel.swift */; };
+		03F213902351E29B00E8DB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2138F2351E29B00E8DB4F /* AppDelegate.swift */; };
+		03F213922351E29B00E8DB4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213912351E29B00E8DB4F /* SceneDelegate.swift */; };
+		03F213942351E29B00E8DB4F /* ListUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213932351E29B00E8DB4F /* ListUserVC.swift */; };
+		03F213972351E29B00E8DB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F213952351E29B00E8DB4F /* Main.storyboard */; };
+		03F213992351E29E00E8DB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F213982351E29E00E8DB4F /* Assets.xcassets */; };
+		03F2139C2351E29E00E8DB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F2139A2351E29E00E8DB4F /* LaunchScreen.storyboard */; };
+		03F213A72351E29E00E8DB4F /* AlnoorTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213A62351E29E00E8DB4F /* AlnoorTVTests.swift */; };
+		03F213B22351E29E00E8DB4F /* AlnoorTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213B12351E29E00E8DB4F /* AlnoorTVUITests.swift */; };
+		03F213C22351E3F400E8DB4F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213C12351E3F400E8DB4F /* NetworkRequest.swift */; };
+		03F213C52351E78F00E8DB4F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213C42351E78F00E8DB4F /* UserModel.swift */; };
+		03F213C82351EEE500E8DB4F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213C72351EEE500E8DB4F /* UserCell.swift */; };
+		03F213CA2351F77600E8DB4F /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213C92351F77600E8DB4F /* UIImageViewExtension.swift */; };
+		8A12D6823FFC736002E3159F /* Pods_AlnoorTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854DBE69A52A2FD7080A942C /* Pods_AlnoorTVTests.framework */; };
+		A3C9C7BDEADDCE4BC7790FAB /* Pods_AlnoorTV_AlnoorTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D3FB3BAC38AC492FD1629B /* Pods_AlnoorTV_AlnoorTVUITests.framework */; };
+		E0BB11C016E655D749BF1DA7 /* Pods_AlnoorTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C918D8DE33681CB9F836DE94 /* Pods_AlnoorTV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03F213A32351E29E00E8DB4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F213842351E29B00E8DB4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F2138B2351E29B00E8DB4F;
+			remoteInfo = AlnoorTV;
+		};
+		03F213AE2351E29E00E8DB4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F213842351E29B00E8DB4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F2138B2351E29B00E8DB4F;
+			remoteInfo = AlnoorTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		037EBE212352410800B7F1DE /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		03C4246B2352267900730AAB /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
+		03C4246D23523B7D00730AAB /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		03F2138C2351E29B00E8DB4F /* AlnoorTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlnoorTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F2138F2351E29B00E8DB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03F213912351E29B00E8DB4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03F213932351E29B00E8DB4F /* ListUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserVC.swift; sourceTree = "<group>"; };
+		03F213962351E29B00E8DB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03F213982351E29E00E8DB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F2139B2351E29E00E8DB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03F2139D2351E29E00E8DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F213A22351E29E00E8DB4F /* AlnoorTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlnoorTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F213A62351E29E00E8DB4F /* AlnoorTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlnoorTVTests.swift; sourceTree = "<group>"; };
+		03F213A82351E29E00E8DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F213AD2351E29E00E8DB4F /* AlnoorTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlnoorTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F213B12351E29E00E8DB4F /* AlnoorTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlnoorTVUITests.swift; sourceTree = "<group>"; };
+		03F213B32351E29E00E8DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F213C12351E3F400E8DB4F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		03F213C42351E78F00E8DB4F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		03F213C72351EEE500E8DB4F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		03F213C92351F77600E8DB4F /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		3BA517F732D8E81BA70A2A79 /* Pods-AlnoorTV-AlnoorTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlnoorTV-AlnoorTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlnoorTV-AlnoorTVUITests/Pods-AlnoorTV-AlnoorTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4642E7E0EC129C2473E7B54D /* Pods-AlnoorTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlnoorTVTests.debug.xcconfig"; path = "Target Support Files/Pods-AlnoorTVTests/Pods-AlnoorTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8146291CC4517B60811BBB81 /* Pods-AlnoorTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlnoorTV.debug.xcconfig"; path = "Target Support Files/Pods-AlnoorTV/Pods-AlnoorTV.debug.xcconfig"; sourceTree = "<group>"; };
+		854DBE69A52A2FD7080A942C /* Pods_AlnoorTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlnoorTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D3FB3BAC38AC492FD1629B /* Pods_AlnoorTV_AlnoorTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlnoorTV_AlnoorTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C918D8DE33681CB9F836DE94 /* Pods_AlnoorTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlnoorTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63B281DC8CD9A6A9E6BC827 /* Pods-AlnoorTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlnoorTV.release.xcconfig"; path = "Target Support Files/Pods-AlnoorTV/Pods-AlnoorTV.release.xcconfig"; sourceTree = "<group>"; };
+		EBD55C52CD5524B3B6BED457 /* Pods-AlnoorTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlnoorTVTests.release.xcconfig"; path = "Target Support Files/Pods-AlnoorTVTests/Pods-AlnoorTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		F19BB8371286939FBAB8DC58 /* Pods-AlnoorTV-AlnoorTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlnoorTV-AlnoorTVUITests.release.xcconfig"; path = "Target Support Files/Pods-AlnoorTV-AlnoorTVUITests/Pods-AlnoorTV-AlnoorTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F213892351E29B00E8DB4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BB11C016E655D749BF1DA7 /* Pods_AlnoorTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F2139F2351E29E00E8DB4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A12D6823FFC736002E3159F /* Pods_AlnoorTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F213AA2351E29E00E8DB4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3C9C7BDEADDCE4BC7790FAB /* Pods_AlnoorTV_AlnoorTVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C4246A2352265400730AAB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03F213932351E29B00E8DB4F /* ListUserVC.swift */,
+				03C4246B2352267900730AAB /* UserDetailVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		03F213832351E29B00E8DB4F = {
+			isa = PBXGroup;
+			children = (
+				03F2138E2351E29B00E8DB4F /* AlnoorTV */,
+				03F213A52351E29E00E8DB4F /* AlnoorTVTests */,
+				03F213B02351E29E00E8DB4F /* AlnoorTVUITests */,
+				03F2138D2351E29B00E8DB4F /* Products */,
+				249D5EDECDDD196197C25EAD /* Pods */,
+				AC208A15EFBCA5DEBC6CDA3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03F2138D2351E29B00E8DB4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F2138C2351E29B00E8DB4F /* AlnoorTV.app */,
+				03F213A22351E29E00E8DB4F /* AlnoorTVTests.xctest */,
+				03F213AD2351E29E00E8DB4F /* AlnoorTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F2138E2351E29B00E8DB4F /* AlnoorTV */ = {
+			isa = PBXGroup;
+			children = (
+				03F213C32351E4BD00E8DB4F /* Helper */,
+				03F213C02351E36700E8DB4F /* Model */,
+				03F213BF2351E35D00E8DB4F /* Network */,
+				03C4246A2352265400730AAB /* ViewController */,
+				03F213C62351EEBB00E8DB4F /* Cells */,
+				03F2138F2351E29B00E8DB4F /* AppDelegate.swift */,
+				03F213912351E29B00E8DB4F /* SceneDelegate.swift */,
+				03F213952351E29B00E8DB4F /* Main.storyboard */,
+				03F213982351E29E00E8DB4F /* Assets.xcassets */,
+				03F2139A2351E29E00E8DB4F /* LaunchScreen.storyboard */,
+				03F2139D2351E29E00E8DB4F /* Info.plist */,
+			);
+			path = AlnoorTV;
+			sourceTree = "<group>";
+		};
+		03F213A52351E29E00E8DB4F /* AlnoorTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				03F213A62351E29E00E8DB4F /* AlnoorTVTests.swift */,
+				03F213A82351E29E00E8DB4F /* Info.plist */,
+			);
+			path = AlnoorTVTests;
+			sourceTree = "<group>";
+		};
+		03F213B02351E29E00E8DB4F /* AlnoorTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03F213B12351E29E00E8DB4F /* AlnoorTVUITests.swift */,
+				03F213B32351E29E00E8DB4F /* Info.plist */,
+			);
+			path = AlnoorTVUITests;
+			sourceTree = "<group>";
+		};
+		03F213BF2351E35D00E8DB4F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				03F213C12351E3F400E8DB4F /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		03F213C02351E36700E8DB4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03F213C42351E78F00E8DB4F /* UserModel.swift */,
+				03C4246D23523B7D00730AAB /* RepoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03F213C32351E4BD00E8DB4F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				03F213C92351F77600E8DB4F /* UIImageViewExtension.swift */,
+				03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		03F213C62351EEBB00E8DB4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				03F213C72351EEE500E8DB4F /* UserCell.swift */,
+				037EBE212352410800B7F1DE /* RepoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		249D5EDECDDD196197C25EAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8146291CC4517B60811BBB81 /* Pods-AlnoorTV.debug.xcconfig */,
+				E63B281DC8CD9A6A9E6BC827 /* Pods-AlnoorTV.release.xcconfig */,
+				3BA517F732D8E81BA70A2A79 /* Pods-AlnoorTV-AlnoorTVUITests.debug.xcconfig */,
+				F19BB8371286939FBAB8DC58 /* Pods-AlnoorTV-AlnoorTVUITests.release.xcconfig */,
+				4642E7E0EC129C2473E7B54D /* Pods-AlnoorTVTests.debug.xcconfig */,
+				EBD55C52CD5524B3B6BED457 /* Pods-AlnoorTVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC208A15EFBCA5DEBC6CDA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C918D8DE33681CB9F836DE94 /* Pods_AlnoorTV.framework */,
+				A1D3FB3BAC38AC492FD1629B /* Pods_AlnoorTV_AlnoorTVUITests.framework */,
+				854DBE69A52A2FD7080A942C /* Pods_AlnoorTVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F2138B2351E29B00E8DB4F /* AlnoorTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F213B62351E29E00E8DB4F /* Build configuration list for PBXNativeTarget "AlnoorTV" */;
+			buildPhases = (
+				ABBCF16088AFBD6138E690A0 /* [CP] Check Pods Manifest.lock */,
+				03F213882351E29B00E8DB4F /* Sources */,
+				03F213892351E29B00E8DB4F /* Frameworks */,
+				03F2138A2351E29B00E8DB4F /* Resources */,
+				DB0C1B35400345C1523ADF78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlnoorTV;
+			productName = AlnoorTV;
+			productReference = 03F2138C2351E29B00E8DB4F /* AlnoorTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03F213A12351E29E00E8DB4F /* AlnoorTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F213B92351E29E00E8DB4F /* Build configuration list for PBXNativeTarget "AlnoorTVTests" */;
+			buildPhases = (
+				8222F886212772FF9BDBEED7 /* [CP] Check Pods Manifest.lock */,
+				03F2139E2351E29E00E8DB4F /* Sources */,
+				03F2139F2351E29E00E8DB4F /* Frameworks */,
+				03F213A02351E29E00E8DB4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F213A42351E29E00E8DB4F /* PBXTargetDependency */,
+			);
+			name = AlnoorTVTests;
+			productName = AlnoorTVTests;
+			productReference = 03F213A22351E29E00E8DB4F /* AlnoorTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03F213AC2351E29E00E8DB4F /* AlnoorTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F213BC2351E29E00E8DB4F /* Build configuration list for PBXNativeTarget "AlnoorTVUITests" */;
+			buildPhases = (
+				14EF12592FD499C0F1E20C1A /* [CP] Check Pods Manifest.lock */,
+				03F213A92351E29E00E8DB4F /* Sources */,
+				03F213AA2351E29E00E8DB4F /* Frameworks */,
+				03F213AB2351E29E00E8DB4F /* Resources */,
+				85750AD9ED6E5FCA54192CAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F213AF2351E29E00E8DB4F /* PBXTargetDependency */,
+			);
+			name = AlnoorTVUITests;
+			productName = AlnoorTVUITests;
+			productReference = 03F213AD2351E29E00E8DB4F /* AlnoorTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F213842351E29B00E8DB4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Teknoloji;
+				TargetAttributes = {
+					03F2138B2351E29B00E8DB4F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					03F213A12351E29E00E8DB4F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 03F2138B2351E29B00E8DB4F;
+					};
+					03F213AC2351E29E00E8DB4F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 03F2138B2351E29B00E8DB4F;
+					};
+				};
+			};
+			buildConfigurationList = 03F213872351E29B00E8DB4F /* Build configuration list for PBXProject "AlnoorTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03F213832351E29B00E8DB4F;
+			productRefGroup = 03F2138D2351E29B00E8DB4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F2138B2351E29B00E8DB4F /* AlnoorTV */,
+				03F213A12351E29E00E8DB4F /* AlnoorTVTests */,
+				03F213AC2351E29E00E8DB4F /* AlnoorTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F2138A2351E29B00E8DB4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F2139C2351E29E00E8DB4F /* LaunchScreen.storyboard in Resources */,
+				03F213992351E29E00E8DB4F /* Assets.xcassets in Resources */,
+				03F213972351E29B00E8DB4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F213A02351E29E00E8DB4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F213AB2351E29E00E8DB4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14EF12592FD499C0F1E20C1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlnoorTV-AlnoorTVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8222F886212772FF9BDBEED7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlnoorTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85750AD9ED6E5FCA54192CAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlnoorTV-AlnoorTVUITests/Pods-AlnoorTV-AlnoorTVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlnoorTV-AlnoorTVUITests/Pods-AlnoorTV-AlnoorTVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlnoorTV-AlnoorTVUITests/Pods-AlnoorTV-AlnoorTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABBCF16088AFBD6138E690A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlnoorTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0C1B35400345C1523ADF78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlnoorTV/Pods-AlnoorTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlnoorTV/Pods-AlnoorTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlnoorTV/Pods-AlnoorTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F213882351E29B00E8DB4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F213C22351E3F400E8DB4F /* NetworkRequest.swift in Sources */,
+				03C4246E23523B7D00730AAB /* RepoModel.swift in Sources */,
+				03F213CA2351F77600E8DB4F /* UIImageViewExtension.swift in Sources */,
+				03F213942351E29B00E8DB4F /* ListUserVC.swift in Sources */,
+				03F213C82351EEE500E8DB4F /* UserCell.swift in Sources */,
+				03C4246C2352267900730AAB /* UserDetailVC.swift in Sources */,
+				03C4246923520E7C00730AAB /* UIViewControllerExtension.swift in Sources */,
+				03F213902351E29B00E8DB4F /* AppDelegate.swift in Sources */,
+				03F213C52351E78F00E8DB4F /* UserModel.swift in Sources */,
+				037EBE222352410800B7F1DE /* RepoCell.swift in Sources */,
+				03F213922351E29B00E8DB4F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F2139E2351E29E00E8DB4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F213A72351E29E00E8DB4F /* AlnoorTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F213A92351E29E00E8DB4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F213B22351E29E00E8DB4F /* AlnoorTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03F213A42351E29E00E8DB4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F2138B2351E29B00E8DB4F /* AlnoorTV */;
+			targetProxy = 03F213A32351E29E00E8DB4F /* PBXContainerItemProxy */;
+		};
+		03F213AF2351E29E00E8DB4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F2138B2351E29B00E8DB4F /* AlnoorTV */;
+			targetProxy = 03F213AE2351E29E00E8DB4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03F213952351E29B00E8DB4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F213962351E29B00E8DB4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03F2139A2351E29E00E8DB4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F2139B2351E29E00E8DB4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F213B42351E29E00E8DB4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03F213B52351E29E00E8DB4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F213B72351E29E00E8DB4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8146291CC4517B60811BBB81 /* Pods-AlnoorTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4354JBXXF;
+				INFOPLIST_FILE = AlnoorTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yildirimonur.AlnoorTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03F213B82351E29E00E8DB4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63B281DC8CD9A6A9E6BC827 /* Pods-AlnoorTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4354JBXXF;
+				INFOPLIST_FILE = AlnoorTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yildirimonur.AlnoorTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03F213BA2351E29E00E8DB4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4642E7E0EC129C2473E7B54D /* Pods-AlnoorTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4354JBXXF;
+				INFOPLIST_FILE = AlnoorTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yildirimonur.AlnoorTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlnoorTV.app/AlnoorTV";
+			};
+			name = Debug;
+		};
+		03F213BB2351E29E00E8DB4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD55C52CD5524B3B6BED457 /* Pods-AlnoorTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4354JBXXF;
+				INFOPLIST_FILE = AlnoorTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yildirimonur.AlnoorTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlnoorTV.app/AlnoorTV";
+			};
+			name = Release;
+		};
+		03F213BD2351E29E00E8DB4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA517F732D8E81BA70A2A79 /* Pods-AlnoorTV-AlnoorTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4354JBXXF;
+				INFOPLIST_FILE = AlnoorTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yildirimonur.AlnoorTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlnoorTV;
+			};
+			name = Debug;
+		};
+		03F213BE2351E29E00E8DB4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19BB8371286939FBAB8DC58 /* Pods-AlnoorTV-AlnoorTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4354JBXXF;
+				INFOPLIST_FILE = AlnoorTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yildirimonur.AlnoorTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlnoorTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F213872351E29B00E8DB4F /* Build configuration list for PBXProject "AlnoorTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F213B42351E29E00E8DB4F /* Debug */,
+				03F213B52351E29E00E8DB4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F213B62351E29E00E8DB4F /* Build configuration list for PBXNativeTarget "AlnoorTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F213B72351E29E00E8DB4F /* Debug */,
+				03F213B82351E29E00E8DB4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F213B92351E29E00E8DB4F /* Build configuration list for PBXNativeTarget "AlnoorTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F213BA2351E29E00E8DB4F /* Debug */,
+				03F213BB2351E29E00E8DB4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F213BC2351E29E00E8DB4F /* Build configuration list for PBXNativeTarget "AlnoorTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F213BD2351E29E00E8DB4F /* Debug */,
+				03F213BE2351E29E00E8DB4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03F213842351E29B00E8DB4F /* Project object */;
+}

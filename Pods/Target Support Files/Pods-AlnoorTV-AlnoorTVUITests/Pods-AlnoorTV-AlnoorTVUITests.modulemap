@@ -1,0 +1,6 @@
+framework module Pods_AlnoorTV_AlnoorTVUITests {
+  umbrella header "Pods-AlnoorTV-AlnoorTVUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

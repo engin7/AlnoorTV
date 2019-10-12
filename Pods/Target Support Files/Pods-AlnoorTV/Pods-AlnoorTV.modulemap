@@ -1,0 +1,6 @@
+framework module Pods_AlnoorTV {
+  umbrella header "Pods-AlnoorTV-umbrella.h"
+
+  export *
+  module * { export * }
+}
