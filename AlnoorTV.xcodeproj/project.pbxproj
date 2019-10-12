@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		037EBE222352410800B7F1DE /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EBE212352410800B7F1DE /* RepoCell.swift */; };
+		037EBE2423526FF500B7F1DE /* ContentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EBE2323526FF500B7F1DE /* ContentAnalyzer.swift */; };
+		037EBE26235272DF00B7F1DE /* ReposSortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EBE25235272DF00B7F1DE /* ReposSortingTest.swift */; };
 		03C4246923520E7C00730AAB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */; };
 		03C4246C2352267900730AAB /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246B2352267900730AAB /* UserDetailVC.swift */; };
 		03C4246E23523B7D00730AAB /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246D23523B7D00730AAB /* RepoModel.swift */; };
@@ -17,7 +19,7 @@
 		03F213972351E29B00E8DB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F213952351E29B00E8DB4F /* Main.storyboard */; };
 		03F213992351E29E00E8DB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F213982351E29E00E8DB4F /* Assets.xcassets */; };
 		03F2139C2351E29E00E8DB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F2139A2351E29E00E8DB4F /* LaunchScreen.storyboard */; };
-		03F213A72351E29E00E8DB4F /* AlnoorTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213A62351E29E00E8DB4F /* AlnoorTVTests.swift */; };
+		03F213A72351E29E00E8DB4F /* AlnoorTVUserFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213A62351E29E00E8DB4F /* AlnoorTVUserFilterTests.swift */; };
 		03F213B22351E29E00E8DB4F /* AlnoorTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213B12351E29E00E8DB4F /* AlnoorTVUITests.swift */; };
 		03F213C22351E3F400E8DB4F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213C12351E3F400E8DB4F /* NetworkRequest.swift */; };
 		03F213C52351E78F00E8DB4F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213C42351E78F00E8DB4F /* UserModel.swift */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		037EBE212352410800B7F1DE /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		037EBE2323526FF500B7F1DE /* ContentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAnalyzer.swift; sourceTree = "<group>"; };
+		037EBE25235272DF00B7F1DE /* ReposSortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposSortingTest.swift; sourceTree = "<group>"; };
 		03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		03C4246B2352267900730AAB /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
 		03C4246D23523B7D00730AAB /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
@@ -59,7 +63,7 @@
 		03F2139B2351E29E00E8DB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F2139D2351E29E00E8DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F213A22351E29E00E8DB4F /* AlnoorTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlnoorTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03F213A62351E29E00E8DB4F /* AlnoorTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlnoorTVTests.swift; sourceTree = "<group>"; };
+		03F213A62351E29E00E8DB4F /* AlnoorTVUserFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlnoorTVUserFilterTests.swift; sourceTree = "<group>"; };
 		03F213A82351E29E00E8DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F213AD2351E29E00E8DB4F /* AlnoorTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlnoorTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F213B12351E29E00E8DB4F /* AlnoorTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlnoorTVUITests.swift; sourceTree = "<group>"; };
@@ -159,7 +163,8 @@
 		03F213A52351E29E00E8DB4F /* AlnoorTVTests */ = {
 			isa = PBXGroup;
 			children = (
-				03F213A62351E29E00E8DB4F /* AlnoorTVTests.swift */,
+				03F213A62351E29E00E8DB4F /* AlnoorTVUserFilterTests.swift */,
+				037EBE25235272DF00B7F1DE /* ReposSortingTest.swift */,
 				03F213A82351E29E00E8DB4F /* Info.plist */,
 			);
 			path = AlnoorTVTests;
@@ -196,6 +201,7 @@
 			children = (
 				03F213C92351F77600E8DB4F /* UIImageViewExtension.swift */,
 				03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */,
+				037EBE2323526FF500B7F1DE /* ContentAnalyzer.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				03F213CA2351F77600E8DB4F /* UIImageViewExtension.swift in Sources */,
 				03F213942351E29B00E8DB4F /* ListUserVC.swift in Sources */,
 				03F213C82351EEE500E8DB4F /* UserCell.swift in Sources */,
+				037EBE2423526FF500B7F1DE /* ContentAnalyzer.swift in Sources */,
 				03C4246C2352267900730AAB /* UserDetailVC.swift in Sources */,
 				03C4246923520E7C00730AAB /* UIViewControllerExtension.swift in Sources */,
 				03F213902351E29B00E8DB4F /* AppDelegate.swift in Sources */,
@@ -489,7 +496,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F213A72351E29E00E8DB4F /* AlnoorTVTests.swift in Sources */,
+				037EBE26235272DF00B7F1DE /* ReposSortingTest.swift in Sources */,
+				03F213A72351E29E00E8DB4F /* AlnoorTVUserFilterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

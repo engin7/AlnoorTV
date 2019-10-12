@@ -18,6 +18,7 @@ class UserDetailVC: UIViewController {
             btnSort.title = "Sort by ratings"
             btnSort.target = self
             btnSort.action = #selector(actionSortClicked)
+            btnSort.accessibilityIdentifier = "Sort by ratings"
             self.navigationItem.rightBarButtonItem = btnSort
         }
     }
@@ -35,7 +36,7 @@ class UserDetailVC: UIViewController {
     }
     
     @objc private func actionSortClicked() {
-        repos = repos.sorted(by: { $0.stargazers_count! > $1.stargazers_count!})
+        self.repos = ContentAnalyzer().sortReposByRating(repos: self.repos)
         self.tableView.reloadData()
     }
 

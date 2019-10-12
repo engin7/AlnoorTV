@@ -19,6 +19,7 @@ class ListUserVC: UIViewController {
     
     private var searchTextField: UISearchTextField! {
         didSet{
+            self.searchTextField.accessibilityIdentifier = "searchTextField"
             self.searchTextField.inputAccessoryView = toolBarDoneClicked()
             self.searchTextField.addTarget(self,
                                            action: #selector(searchTextFieldDidChange(textField:)),
@@ -35,12 +36,14 @@ class ListUserVC: UIViewController {
             tableView.dataSource = self
             tableView.separatorStyle = .none
             tableView.tableFooterView = UIView()
+            tableView.accessibilityIdentifier = "List user tableView"
             tableView.register(UserCell.self, forCellReuseIdentifier: "UserCell")
         }
     }
     
     @objc func searchTextFieldDidChange(textField: UITextField) {
-        self.filterUsers(text: textField.text!)
+        self.searchUsersIndexes = ContentAnalyzer().filterUsers(users: self.users, text: self.searchTextField.text!)
+        self.tableView.reloadData()
     }
 
     override func viewDidLoad() {
@@ -68,25 +71,13 @@ class ListUserVC: UIViewController {
                         }
                     }
                     self.users.append(contentsOf: users!)
-                    self.filterUsers(text: self.searchTextField.text!)
+                    self.searchUsersIndexes = ContentAnalyzer().filterUsers(users: self.users, text: self.searchTextField.text!)
+                    self.tableView.reloadData()
                 }
             } else {
                 print("Probably too many request")
             }
         }
-    }
-    
-    private func filterUsers(text: String){
-        self.searchUsersIndexes = [Int]()
-        
-        var index = 0
-        for user in self.users {
-            if(user.login!.contains(text) || text == ""){
-                self.searchUsersIndexes.append(index)
-            }
-            index += 1
-        }
-        self.tableView.reloadData()
     }
     
     override func viewDidLayoutSubviews() {
@@ -128,7 +119,7 @@ extension ListUserVC: UITableViewDelegate, UITableViewDataSource {
         let url = URL(string: urlString!)!
         cell.imgProfile.sd_setImage(with: url, placeholderImage: nil)
         cell.lblUserName.text = users[searchUsersIndexes[indexPath.row]].login
-        
+        cell.accessibilityIdentifier = "myCell_\(indexPath.row)"
         return cell
     }
     
