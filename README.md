@@ -20,7 +20,9 @@ Swift 5.0+
 Communication
 
 If you need help, mail to yildirimpost@gmail.com
+
 If you found a bug, please inform me.
+
 If you have a feature request, please send an email to me.
 
 License
