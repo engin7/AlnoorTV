@@ -12,11 +12,13 @@ This app connects to Github platform to get user and repository information.
 
 
 Requirements
+
 Minimum IOS deployment target 13.1 and support both Iphone and Ipad.
 XCode 10.0+
 Swift 5.0+
 
 Communication
+
 If you need help, mail to yildirimpost@gmail.com
 If you found a bug, please inform me.
 If you have a feature request, please send an email to me.
