@@ -24,7 +24,7 @@ class ContentAnalyzer {
     
     func sortReposByRating(repos: [RepoModel]) -> [RepoModel] {
         var cacheRepos = repos
-        cacheRepos = repos.sorted(by: { $0.stargazers_count! > $1.stargazers_count!})
+        cacheRepos = repos.sorted(by: { $0.stargazers_count ?? 0 > $1.stargazers_count ?? 0})
         return cacheRepos
     }
 }
