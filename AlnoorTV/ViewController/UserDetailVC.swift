@@ -31,7 +31,7 @@ class UserDetailVC: UIViewController {
             tableView.dataSource = self
             tableView.separatorStyle = .none
             tableView.tableFooterView = UIView()
-            tableView.register(RepoCell.self, forCellReuseIdentifier: "RepoCell")
+            tableView.register(RepoCell.self, forCellReuseIdentifier: cellIdRepoCell)
         }
     }
     
@@ -80,14 +80,14 @@ extension UserDetailVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell") as! RepoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdRepoCell) as! RepoCell
         cell.repoObject = repos[indexPath.row]
         cell.initUI()
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return cellHeightRepocell
     }
     
 }

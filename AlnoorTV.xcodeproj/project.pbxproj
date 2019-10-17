@@ -13,6 +13,9 @@
 		03C4246923520E7C00730AAB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */; };
 		03C4246C2352267900730AAB /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246B2352267900730AAB /* UserDetailVC.swift */; };
 		03C4246E23523B7D00730AAB /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4246D23523B7D00730AAB /* RepoModel.swift */; };
+		03D196792358CDA20096AD97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D196782358CDA20096AD97 /* Constants.swift */; };
+		03D1967B2358D3750096AD97 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1967A2358D3750096AD97 /* UIApplicationExtension.swift */; };
+		03D1967D2358D3C30096AD97 /* BaseNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1967C2358D3C30096AD97 /* BaseNetworkRequest.swift */; };
 		03F213902351E29B00E8DB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2138F2351E29B00E8DB4F /* AppDelegate.swift */; };
 		03F213922351E29B00E8DB4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213912351E29B00E8DB4F /* SceneDelegate.swift */; };
 		03F213942351E29B00E8DB4F /* ListUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F213932351E29B00E8DB4F /* ListUserVC.swift */; };
@@ -54,6 +57,9 @@
 		03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		03C4246B2352267900730AAB /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
 		03C4246D23523B7D00730AAB /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		03D196782358CDA20096AD97 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		03D1967A2358D3750096AD97 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		03D1967C2358D3C30096AD97 /* BaseNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkRequest.swift; sourceTree = "<group>"; };
 		03F2138C2351E29B00E8DB4F /* AlnoorTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlnoorTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F2138F2351E29B00E8DB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F213912351E29B00E8DB4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				03F213C12351E3F400E8DB4F /* NetworkRequest.swift */,
+				03D1967C2358D3C30096AD97 /* BaseNetworkRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -199,9 +206,11 @@
 		03F213C32351E4BD00E8DB4F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				03D196782358CDA20096AD97 /* Constants.swift */,
 				03F213C92351F77600E8DB4F /* UIImageViewExtension.swift */,
 				03C4246823520E7C00730AAB /* UIViewControllerExtension.swift */,
 				037EBE2323526FF500B7F1DE /* ContentAnalyzer.swift */,
+				03D1967A2358D3750096AD97 /* UIApplicationExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -481,13 +490,16 @@
 				03C4246E23523B7D00730AAB /* RepoModel.swift in Sources */,
 				03F213CA2351F77600E8DB4F /* UIImageViewExtension.swift in Sources */,
 				03F213942351E29B00E8DB4F /* ListUserVC.swift in Sources */,
+				03D1967D2358D3C30096AD97 /* BaseNetworkRequest.swift in Sources */,
 				03F213C82351EEE500E8DB4F /* UserCell.swift in Sources */,
 				037EBE2423526FF500B7F1DE /* ContentAnalyzer.swift in Sources */,
 				03C4246C2352267900730AAB /* UserDetailVC.swift in Sources */,
+				03D196792358CDA20096AD97 /* Constants.swift in Sources */,
 				03C4246923520E7C00730AAB /* UIViewControllerExtension.swift in Sources */,
 				03F213902351E29B00E8DB4F /* AppDelegate.swift in Sources */,
 				03F213C52351E78F00E8DB4F /* UserModel.swift in Sources */,
 				037EBE222352410800B7F1DE /* RepoCell.swift in Sources */,
+				03D1967B2358D3750096AD97 /* UIApplicationExtension.swift in Sources */,
 				03F213922351E29B00E8DB4F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

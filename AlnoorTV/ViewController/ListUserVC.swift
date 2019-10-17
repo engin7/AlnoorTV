@@ -37,7 +37,7 @@ class ListUserVC: UIViewController {
             tableView.separatorStyle = .none
             tableView.tableFooterView = UIView()
             tableView.accessibilityIdentifier = "List user tableView"
-            tableView.register(UserCell.self, forCellReuseIdentifier: "UserCell")
+            tableView.register(UserCell.self, forCellReuseIdentifier: cellIdUserCell)
         }
     }
     
@@ -98,7 +98,7 @@ class ListUserVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "user_detail"){
+        if(segue.identifier == segueUserDetail){
             let user = self.users[searchUsersIndexes[segueIndex]]
             let userDetailVC = segue.destination as! UserDetailVC
             userDetailVC.user = user
@@ -113,7 +113,7 @@ extension ListUserVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as! UserCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdUserCell) as! UserCell
         
         let urlString = users[searchUsersIndexes[indexPath.row]].avatar_url
         let url = URL(string: urlString!)!
@@ -124,7 +124,7 @@ extension ListUserVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80.0
+        return cellHeightUserCell
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -133,7 +133,7 @@ extension ListUserVC: UITableViewDelegate, UITableViewDataSource {
         if (indexPath.section ==  lastSectionIndex &&
             indexPath.row == lastRowIndex &&
             !hasReachedLimit &&
-            searchTextField.text == "") {
+            searchTextField.text!.isEmpty) {
             // print("this is the last cell")
             let spinner = UIActivityIndicatorView(style: .medium)
             spinner.startAnimating()
@@ -147,7 +147,7 @@ extension ListUserVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.segueIndex = indexPath.row
-        performSegue(withIdentifier: "user_detail", sender: self)
+        performSegue(withIdentifier: segueUserDetail, sender: self)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

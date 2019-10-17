@@ -11,7 +11,9 @@ import SnapKit
 
 class UserCell: UITableViewCell {
 
-    private let imgHeightAndWidth = 50
+    private let imgProfileHeightAndWidth = 50
+    private let imgProfileLeftOffset = 20
+    private let lblUserNameLeftOffset = 15
     
     var imgProfile = UIImageView()
     var lblUserName = UILabel()
@@ -25,7 +27,7 @@ class UserCell: UITableViewCell {
     private func initUI() {
         self.selectionStyle = .none
         
-        imgProfile.layer.cornerRadius = CGFloat(imgHeightAndWidth / 2)
+        imgProfile.layer.cornerRadius = CGFloat(imgProfileHeightAndWidth / 2)
         imgProfile.layer.masksToBounds = true
         self.addSubview(imgProfile)
         
@@ -34,15 +36,15 @@ class UserCell: UITableViewCell {
     
     override func layoutSubviews() {
         self.imgProfile.snp.makeConstraints { (make) in
-            make.height.equalTo(imgHeightAndWidth)
-            make.width.equalTo(imgHeightAndWidth)
+            make.height.equalTo(imgProfileHeightAndWidth)
+            make.width.equalTo(imgProfileHeightAndWidth)
             make.centerY.equalTo(self.snp.centerY)
-            make.left.equalTo(self.snp.left).offset(20)
+            make.left.equalTo(self.snp.left).offset(imgProfileLeftOffset)
         }
         
         self.lblUserName.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
-            make.left.equalTo(self.imgProfile.snp.right).offset(15)
+            make.left.equalTo(self.imgProfile.snp.right).offset(lblUserNameLeftOffset)
         }
     }
     

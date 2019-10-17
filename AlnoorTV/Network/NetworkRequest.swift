@@ -8,48 +8,35 @@
 
 import Foundation
 
-class NetworkRequest {
+class NetworkRequest: BaseNetworkRequest {
     
     func getGitHubUsersRequest(id: Int, completion: @escaping (Bool, Array<UserModel>?)-> ()) {
         
-        let url:URL = URL(string: "https://api.github.com/users?since=\(id)")!
-        let session = URLSession.shared
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        let url:URL = URL(string: baseUrl + "?since=\(id)")!
         
-        let task = session.dataTask(with: request as URLRequest) {
-            (data, response, error) in
+        self.getRequest(url: url, type: .GET) { (data) in
             do{
                 let user = try JSONDecoder().decode(Array<UserModel>.self, from: data!)
                 completion(false, user)
             } catch let error{
-                print("Json Parse Error : \(error)")
+                self.handleErrorCase(errorTextBody: "Json Parse Error : \(error)")
                 completion(true, nil)
             }
         }
-        task.resume()
-        
     }
     
     func getUserRepoRequest(userLogin: String, completion: @escaping (Bool, Array<RepoModel>?)-> ()) {
+        let url:URL = URL(string: baseUrl + "/\(userLogin)/repos")!
         
-        let url:URL = URL(string: "https://api.github.com/users/\(userLogin)/repos")!
-        let session = URLSession.shared
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        
-        let task = session.dataTask(with: request as URLRequest) {
-            (data, response, error) in
+        self.getRequest(url: url, type: .GET) { (data) in
             do{
                 let user = try JSONDecoder().decode(Array<RepoModel>.self, from: data!)
                 completion(false, user)
             } catch let error{
-                print("Json Parse Error : \(error)")
+                self.handleErrorCase(errorTextBody: "Json Parse Error : \(error)")
                 completion(true, nil)
             }
         }
-        task.resume()
-        
     }
     
 }

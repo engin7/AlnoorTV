@@ -10,6 +10,9 @@ import UIKit
 
 class RepoCell: UITableViewCell {
 
+    private let standardOffset = 5
+    private let lblLanguageTopOffset = 25
+    
     var repoObject = RepoModel()
     
     private let viewBottomLine: UIView = {
@@ -46,8 +49,11 @@ class RepoCell: UITableViewCell {
         self.addSubview(self.lblLanguage)
         self.lblLanguageData.text = repoObject.language
         self.addSubview(self.lblLanguageData)
-        
-        self.lblStar.text = String(describing: repoObject.stargazers_count!) + " star"
+        var count = 0
+        if let repoStar = repoObject.stargazers_count {
+            count = repoStar
+        }
+        self.lblStar.text = String(describing: count) + " star"
         self.lblStar.textColor = .blue
         self.addSubview(self.lblStar)
         self.addSubview(viewBottomLine)
@@ -55,31 +61,31 @@ class RepoCell: UITableViewCell {
     
     override func layoutSubviews() {
         lblDescription.snp.makeConstraints { (make) in
-            make.top.equalTo(self.snp.top).offset(5)
-            make.left.equalTo(self.snp.left).offset(5)
+            make.top.equalTo(self.snp.top).offset(standardOffset)
+            make.left.equalTo(self.snp.left).offset(standardOffset)
         }
         lblDescriptionData.snp.makeConstraints { (make) in
             make.top.equalTo(self.lblDescription.snp.top)
-            make.left.equalTo(self.lblDescription.snp.right).offset(5)
-            make.right.equalTo(self.snp.right).offset(-5)
+            make.left.equalTo(self.lblDescription.snp.right).offset(standardOffset)
+            make.right.equalTo(self.snp.right).offset(-standardOffset)
         }
         lblLanguage.snp.makeConstraints { (make) in
-            make.top.equalTo(self.lblDescription.snp.bottom).offset(25)
-            make.left.equalTo(self.snp.left).offset(5)
+            make.top.equalTo(self.lblDescription.snp.bottom).offset(lblLanguageTopOffset)
+            make.left.equalTo(self.snp.left).offset(standardOffset)
         }
         lblLanguageData.snp.makeConstraints { (make) in
             make.top.equalTo(self.lblLanguage.snp.top)
-            make.left.equalTo(self.lblLanguage.snp.right).offset(5)
-            make.right.equalTo(self.snp.right).offset(-5)
+            make.left.equalTo(self.lblLanguage.snp.right).offset(standardOffset)
+            make.right.equalTo(self.snp.right).offset(-standardOffset)
         }
         lblStar.snp.makeConstraints { (make) in
             make.top.equalTo(self.lblLanguage.snp.top)
-            make.right.equalTo(self.snp.right).offset(-5)
+            make.right.equalTo(self.snp.right).offset(-standardOffset)
         }
         viewBottomLine.snp.makeConstraints { (make) in
             make.height.equalTo(1)
-            make.left.equalTo(self.snp.left).offset(5)
-            make.right.equalTo(self.snp.right).offset(-5)
+            make.left.equalTo(self.snp.left).offset(standardOffset)
+            make.right.equalTo(self.snp.right).offset(-standardOffset)
             make.bottom.equalTo(self.snp.bottom)
         }
     }

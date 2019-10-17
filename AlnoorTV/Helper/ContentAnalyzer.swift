@@ -14,7 +14,7 @@ class ContentAnalyzer {
         var filterIndexes = [Int]()
         var index = 0
         for user in users {
-            if(user.login!.contains(text) || text == ""){
+            if(user.login!.contains(text) || text.isEmpty){
                 filterIndexes.append(index)
             }
             index += 1
